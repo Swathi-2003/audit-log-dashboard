@@ -27,7 +27,8 @@ export default function App() {
         ...Object.fromEntries(Object.entries(filters).filter(([, v]) => v)),
         sortBy, order, page, limit
       });
-      const res = await fetch(`/api/logs?${params.toString()}`);
+      const API_BASE = import.meta.env.VITE_API_URL || '';
+      const res = await fetch(`${API_BASE}/api/logs?${params.toString()}`);
       if (!res.ok) throw new Error(`Request failed: ${res.status}`);
       const json = await res.json();
       setData(json);
