@@ -4,6 +4,10 @@ A full-stack dashboard for uploading, browsing, filtering, searching, sorting,
 and paginating security audit logs. Built with React, Node.js/Express, and
 MongoDB.
 
+## Live Demo
+- Frontend: https://audit-log-dashboard-1bq8sq201-swathi8.vercel.app
+- Backend API: https://audit-log-dashboard-y5if.onrender.com
+
 ## Stack
 
 - **Frontend:** React (Vite)
